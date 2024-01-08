@@ -4,7 +4,11 @@
 module.exports = {
   siteMetadata: {
     title: `SeokHun's Dev Blog`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-emotion"]
+  plugins: [
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
