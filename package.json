@@ -1,0 +1,25 @@
+{
+  "name": "seok-hun-s-dev-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "seok-hun-s-dev-blog",
+  "author": "tommya98",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "gatsby": "^5.13.1",
+    "gatsby-plugin-emotion": "^8.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
