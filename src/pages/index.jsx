@@ -1,11 +1,11 @@
 import * as React from "react";
+import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <main>
-      <h1>SeokHun's Dev Blog</h1>
+    <Layout pageTitle="Home">
       <p>주니어 개발자의 개발 블로그입니다.</p>
-    </main>
+    </Layout>
   );
 };
 
