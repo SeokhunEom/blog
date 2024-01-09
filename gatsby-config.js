@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `SeokHun's Dev Blog`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://main--melodious-cendol-fa2589.netlify.app/`,
   },
   plugins: [
     "gatsby-plugin-emotion",

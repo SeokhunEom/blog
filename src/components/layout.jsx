@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "@emotion/styled";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 
 const Container = styled.div`
   margin: auto;
@@ -8,11 +8,18 @@ const Container = styled.div`
   font-family: sans-serif;
 `;
 
+const Header = styled.header`
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+`;
+
 const Heading = styled.h1`
   color: rebeccapurple;
 `;
 
-const NavList = styled.nav`
+const NavList = styled.ul`
   display: flex;
   list-style: none;
   padding-left: 0;
@@ -27,8 +34,19 @@ const NavLinkText = styled(Link)`
 `;
 
 const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <Container>
+      <Header>{data.site.siteMetadata.title}</Header>
       <nav>
         <NavList>
           <NavListItem>
