@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 import { Link, useStaticQuery, graphql } from "gatsby";
+import useSiteMetadata from "../hooks/useSiteMetadata";
 
 const Container = styled.div`
   margin: auto;
@@ -34,19 +35,11 @@ const NavLinkText = styled(Link)`
 `;
 
 const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const siteMetadata = useSiteMetadata();
 
   return (
     <Container>
-      <Header>{data.site.siteMetadata.title}</Header>
+      <Header>{siteMetadata.title}</Header>
       <nav>
         <NavList>
           <NavListItem>
