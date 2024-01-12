@@ -6,21 +6,27 @@ import Seo from "../components/seo";
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Blog Posts">
-      <p>최근 작성된 블로그 포스트를 확인해보세요.</p>
-      <ul>
-        {data.allFile.nodes.map((node) => (
-          <li key={node.name}>{node.name}</li>
-        ))}
-      </ul>
+      {data.allMdx.nodes.map((node) => (
+        <article key={node.id}>
+          <h2>{node.frontmatter.title}</h2>
+          <p>작성일: {node.frontmatter.date}</p>
+          <p>{node.excerpt}</p>
+        </article>
+      ))}
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    allFile {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        name
+        frontmatter {
+          date(formatString: "YYYY.MM.DD")
+          title
+        }
+        id
+        excerpt
       }
     }
   }
