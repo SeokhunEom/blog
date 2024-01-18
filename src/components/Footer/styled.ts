@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-import { contentMaxWidth, MOBILE_MEDIA_QUERY } from '@/src/styles/const';
+import { contentMaxWidth, MOBILE_MEDIA_QUERY } from "@/src/styles/const";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
 
   @media ${MOBILE_MEDIA_QUERY} {
     font-size: 13px;
-    height: 40px;
   }
 `;
 
