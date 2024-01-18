@@ -21,7 +21,7 @@ const Playground: React.FC<PlaygroundProps> = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Seo title="개발자 석훈 | Playground" />
+      <Seo title="seokhun.com | Playground" />
       <Title>개인적인 실험실</Title>
       <ProjectCardsWrapper>
         {projects.map((project, index) => (
