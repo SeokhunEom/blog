@@ -13,7 +13,7 @@ export default {
    */
   comments: {
     utterances: {
-      repo: `/tommya98/blog`,
+      repo: `tommya98/blog`,
     },
   },
 
