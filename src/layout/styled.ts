@@ -4,7 +4,6 @@ import { contentMaxWidth, MOBILE_MEDIA_QUERY } from "../styles/const";
 
 export const Wrapper = styled.div`
   overflow-y: scroll;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;

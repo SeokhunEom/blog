@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import React from "react";
 
+import useTocScroll from "@/src/hooks/useTocScroll";
 import PostHeader from "@/src/components/PostHeader";
 import PostNavigator from "@/src/components/PostNavigator";
 import Seo from "@/src/components/Seo";
@@ -27,6 +28,7 @@ const PostTemplate: React.FC<PostTemplateProps> = ({ location, data }) => {
   const prevPost = data.prev && new PostClass(data.prev);
   const nextPost = data.next && new PostClass(data.next);
   const utterancesRepo = data.site.siteMetadata.comments.utterances.repo;
+  const contentRef = useTocScroll();
 
   return (
     <Layout location={location}>
@@ -35,7 +37,7 @@ const PostTemplate: React.FC<PostTemplateProps> = ({ location, data }) => {
         description={curPost?.excerpt}
       />
       <PostHeader post={curPost} />
-      <S.PostContent>
+      <S.PostContent ref={contentRef}>
         <div
           className="markdown"
           dangerouslySetInnerHTML={{ __html: curPost.html }}
