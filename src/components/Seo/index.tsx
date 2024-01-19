@@ -22,6 +22,7 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
               nickname
             }
             ogImage
+            naverVertification
           }
         }
       }
@@ -68,6 +69,10 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `naver-site-vertification`,
+          content: site.siteMetadata.naverVertification,
         },
       ]}
     />

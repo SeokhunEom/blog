@@ -7,6 +7,7 @@ export default {
   language: `ko`,
   siteUrl: `https://seokhun.dev/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  naverVertification: `d7906020c046764bbc6896d85454eff1e45f9915`,
 
   /**
    * comments setting
