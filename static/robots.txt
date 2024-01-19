@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://melodious-cendol-fa2589.netlify.app/sitemap/sitemap-index.xml

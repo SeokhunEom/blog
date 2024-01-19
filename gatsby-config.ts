@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import type { GatsbyConfig } from 'gatsby';
+import type { GatsbyConfig } from "gatsby";
 
-import siteMetadata from './gatsby-site-meta-data';
-import { darkTheme, lightTheme } from './src/styles/const';
+import siteMetadata from "./gatsby-site-meta-data";
+import { darkTheme, lightTheme } from "./src/styles/const";
 
 const config: GatsbyConfig = {
   flags: {
@@ -22,13 +22,6 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-svgr`,
-    // Google Adsense
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-XXXXXXXXXXXX`,
-      },
-    },
     // Google Analytics
     {
       resolve: `gatsby-plugin-gtag`,
@@ -63,7 +56,7 @@ const config: GatsbyConfig = {
                   // slug는 사이트의 post주소을 이름으로 씁니다. gatsby-node.js와 연관 있습니다.
                   url: encodeURI(site.siteMetadata.siteUrl + node.fields.slug),
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ 'content:encoded': node.html }],
+                  custom_elements: [{ "content:encoded": node.html }],
                 });
               });
             },
@@ -86,10 +79,10 @@ const config: GatsbyConfig = {
                 }
               }
             `,
-            output: '/rss.xml',
-            title: 'jeong-min.com RSS Feed',
-            match: '^/blog/',
-            link: 'https://feeds.feedburner.com/gatsby/blog',
+            output: "/rss.xml",
+            title: "seokhun.com RSS Feed",
+            match: "^/blog/",
+            link: "https://feeds.feedburner.com/gatsby/blog",
           },
         ],
       },
@@ -102,11 +95,11 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://jeong-min.com/',
-        sitemap: 'https://jeong-min.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: "https://melodious-cendol-fa2589.netlify.app/",
+        sitemap: "https://melodious-cendol-fa2589.netlify.app/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
 
@@ -133,18 +126,18 @@ const config: GatsbyConfig = {
             options: {
               maxWidth: 720,
               linkImagesToOriginal: false,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
             },
           },
           {
             resolve: `gatsby-remark-table-of-contents`,
             options: {
-              exclude: 'Table of Contents',
+              exclude: "Table of Contents",
               tight: false,
               ordered: false,
               fromHeading: 2,
               toHeading: 6,
-              className: 'table-of-contents',
+              className: "table-of-contents",
             },
           },
           {
@@ -156,15 +149,15 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
               languageExtensions: [
                 {
-                  language: 'superscript',
-                  extend: 'javascript',
+                  language: "superscript",
+                  extend: "javascript",
                   definition: {
                     superscript_types: /(SuperType)/,
                   },
@@ -176,8 +169,8 @@ const config: GatsbyConfig = {
                 },
               ],
               prompt: {
-                user: 'root',
-                host: 'localhost',
+                user: "root",
+                host: "localhost",
                 global: false,
               },
               escapeEntities: {},
