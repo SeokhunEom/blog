@@ -26,7 +26,7 @@ export const ContentWrapper = styled.div`
   box-shadow: 0 0 30px rgb(0 0 0 / 0.1);
 
   @media ${MOBILE_MEDIA_QUERY} {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 `;
 

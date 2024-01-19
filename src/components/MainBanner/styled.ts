@@ -60,6 +60,7 @@ export const IntroWrapper = styled.div`
 
   @media ${MOBILE_MEDIA_QUERY} {
     flex-direction: column;
+    gap: 8px;
   }
 
   strong {
