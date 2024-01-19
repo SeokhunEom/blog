@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
   @media ${MOBILE_MEDIA_QUERY} {
     padding: 0 10px;
     margin-top: 80px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
 
   .gatsby-image-wrapper {
@@ -42,9 +42,9 @@ export const Wrapper = styled.div`
     top: -100px;
     width: 300px;
     @media ${MOBILE_MEDIA_QUERY} {
-      position: absolute;
+      position: relative;
       right: 0;
-      top: -20px;
+      top: 0;
       width: 100px;
     }
   }
@@ -118,37 +118,4 @@ export const SocialButton = styled.a`
   color: ${({ theme }) => theme.color.black100};
   font-size: 18px;
   ${({ theme }) => hoverUnderline(theme)};
-`;
-
-export const DropdownButton = styled.div`
-  color: ${({ theme }) => theme.color.black100};
-  font-size: 18px;
-  position: absolute;
-  height: 100px;
-  bottom: -100px;
-  & > div:first-of-type {
-    cursor: pointer;
-    ${({ theme }) => hoverUnderline(theme)};
-  }
-  @media ${MOBILE_MEDIA_QUERY} {
-    left: 0px;
-    align-items: flex-start;
-    bottom: -110px;
-  }
-`;
-
-export const Dropdown = styled.div`
-  margin-top: 5px;
-  position: absolute;
-  gap: 2px;
-  display: flex;
-  flex-direction: column;
-  top: 25px;
-  right: 0;
-  align-items: flex-end;
-  z-index: 30;
-  @media ${MOBILE_MEDIA_QUERY} {
-    left: 0px;
-    align-items: flex-start;
-  }
 `;

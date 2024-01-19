@@ -22,7 +22,7 @@ export default {
    */
   author: {
     name: `엄석훈`,
-    nickname: `석훈`,
+    nickname: `엄석훈`,
     stack: ["Frontend", "React", "Typescript"],
     bio: {
       email: `tommya98@naver.com`,
