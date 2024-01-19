@@ -19,7 +19,7 @@ const Guestbook: React.FC<GuestbookProps> = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Seo title="seokhun.com | Guestbook" />
+      <Seo title="seokhun.dev | Guestbook" />
       <GuestbookBanner />
       <Utterances repo={utterancesRepo} path="guestbook" />
     </Layout>

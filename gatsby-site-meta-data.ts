@@ -2,10 +2,10 @@ export default {
   /**
    * basic Information
    */
-  title: `seokhun.com`,
+  title: `seokhun.dev`,
   description: `개발자 엄석훈`,
   language: `ko`,
-  siteUrl: `https://melodious-cendol-fa2589.netlify.app/`,
+  siteUrl: `https://seokhun.dev/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
 
   /**

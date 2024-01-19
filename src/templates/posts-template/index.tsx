@@ -50,7 +50,7 @@ const PostsTemplate: React.FC<PostsTemplateProps> = ({
 
   return (
     <Layout location={location}>
-      <Seo title="seokhun.com | Posts" />
+      <Seo title="seokhun.dev | Posts" />
       <S.CategoryWrapper>
         <S.CategoryTitle>{categories[currentTabIndex]}</S.CategoryTitle>
         <S.CategorySubtitle>{`${posts.length} post${

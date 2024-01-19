@@ -81,7 +81,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: "/rss.xml",
-            title: "seokhun.com RSS Feed",
+            title: "seokhun.dev RSS Feed",
             match: "^/blog/",
             link: "https://feeds.feedburner.com/gatsby/blog",
           },
@@ -98,8 +98,8 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://melodious-cendol-fa2589.netlify.app/",
-        sitemap: "https://melodious-cendol-fa2589.netlify.app/sitemap.xml",
+        host: "https://seokhun.dev/",
+        sitemap: "https://seokhun.dev/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -190,7 +190,7 @@ const config: GatsbyConfig = {
         short_name: siteMetadata.title,
         description: siteMetadata.description,
         start_url: `/`,
-        lang: `en`,
+        lang: `ko`,
         display: `standalone`,
         icon: `static/favicon.png`,
       },
