@@ -26,7 +26,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: `G-XXXXXXXX`,
+        trackingId: `G-GNED9Y0XVQ`,
         head: true,
       },
     },
