@@ -1,7 +1,7 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
+import { graphql, useStaticQuery } from "gatsby";
+import PropTypes from "prop-types";
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
 type SeoProps = {
   description?: string;
@@ -25,14 +25,14 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
           }
         }
       }
-    `,
+    `
   );
 
   const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
-      htmlAttributes={{ lang: 'en' }}
+      htmlAttributes={{ lang: "ko" }}
       title={title}
       defaultTitle={site.siteMetadata.title}
       meta={[
@@ -53,15 +53,15 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
           content: metaDescription,
         },
         {
-          property: 'og:author',
+          property: "og:author",
           content: site.siteMetadata.author.name,
         },
         {
-          property: 'og:author',
+          property: "og:author",
           content: site.siteMetadata.author.nickname,
         },
         {
-          property: 'og:image',
+          property: "og:image",
           content: site.siteMetadata.ogImage,
         },
 

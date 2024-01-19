@@ -22,12 +22,13 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-svgr`,
-    // Google Analytics
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `G-GNED9Y0XVQ`,
-        head: true,
+        trackingIds: [`G-GNED9Y0XVQ`],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
