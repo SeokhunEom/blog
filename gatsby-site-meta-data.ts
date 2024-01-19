@@ -3,7 +3,7 @@ export default {
    * basic Information
    */
   title: `seokhun.dev`,
-  description: `개발자 엄석훈`,
+  description: `엄석훈의 개발 블로그입니다.`,
   language: `ko`,
   siteUrl: `https://seokhun.dev/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
