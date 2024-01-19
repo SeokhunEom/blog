@@ -32,50 +32,52 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
   const metaDescription = description || site.siteMetadata.description;
 
   return (
-    <Helmet
-      htmlAttributes={{ lang: "ko" }}
-      title={title}
-      defaultTitle={site.siteMetadata.title}
-      meta={[
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:site_title`,
-          content: title,
-        },
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: "og:author",
-          content: site.siteMetadata.author.name,
-        },
-        {
-          property: "og:author",
-          content: site.siteMetadata.author.nickname,
-        },
-        {
-          property: "og:image",
-          content: site.siteMetadata.ogImage,
-        },
+    <>
+      <Helmet
+        htmlAttributes={{ lang: "ko" }}
+        title={title}
+        defaultTitle={site.siteMetadata.title}
+        meta={[
+          {
+            property: `og:title`,
+            content: title,
+          },
+          {
+            property: `og:site_title`,
+            content: title,
+          },
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: "og:author",
+            content: site.siteMetadata.author.name,
+          },
+          {
+            property: "og:author",
+            content: site.siteMetadata.author.nickname,
+          },
+          {
+            property: "og:image",
+            content: site.siteMetadata.ogImage,
+          },
 
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `naver-site-vertification`,
-          content: site.siteMetadata.naverVertification,
-        },
-      ]}
-    />
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+        ]}
+      />
+      <meta
+        name="naver-site-vertification"
+        content={site.siteMetadata.naverVertification}
+      ></meta>
+    </>
   );
 };
 
