@@ -26,9 +26,9 @@ export default {
     stack: ["Frontend", "React", "Typescript"],
     bio: {
       email: `tommya98@naver.com`,
-      residence: "Seoul, South Korea",
+      residence: "대한민국, 서울",
       bachelorDegree:
-        "Sogang Univ. Electronic & Economics & Computer Science (2018.03-Present)",
+        "서강대학교, 전자공학, 경제학, 컴퓨터공학 학사 (2018.03-재학중)",
     },
     social: {
       github: `https://github.com/tommya98`,
@@ -58,7 +58,7 @@ export default {
     {
       category: "Activity",
       date: "2023.07 - 2023.08",
-      en: "Bootcamp",
+      en: "Softeer Bootcamp",
       kr: "부트캠프",
       info: "현대자동차 소프티어 부트캠프",
       link: "",
