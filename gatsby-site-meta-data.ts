@@ -44,7 +44,7 @@ export default {
   featured: [
     {
       title: "category1",
-      category: "featured-category1",
+      category: "featured-test",
     },
     {
       title: "category2",
