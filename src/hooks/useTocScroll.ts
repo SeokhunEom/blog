@@ -12,6 +12,7 @@ const useTocScroll = () => {
       if (target.tagName !== "A") return;
       const targetHref = target.getAttribute("href") as string;
       if (targetHref.startsWith("#fn-")) return;
+      if (!targetHref.startsWith("#")) return;
 
       if (targetHref.startsWith("#fnref-")) {
         e.preventDefault();
