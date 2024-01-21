@@ -10,9 +10,28 @@ const useTocScroll = () => {
     const handleClick = (e: MouseEvent) => {
       const target = e.currentTarget as HTMLElement;
       if (target.tagName !== "A") return;
+      const targetHref = target.getAttribute("href") as string;
+      if (targetHref.startsWith("#fn-")) return;
+
+      if (targetHref.startsWith("#fnref-")) {
+        e.preventDefault();
+        if (target) {
+          const target = Array.from(
+            contentElement.querySelectorAll("a")
+          ).filter((anchor) =>
+            anchor.getAttribute("href")?.includes(targetHref.replace("ref", ""))
+          )[0] as HTMLAnchorElement;
+          console.log(target);
+          if (target) {
+            const targetPosition =
+              target.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: targetPosition - 60, behavior: "smooth" });
+          }
+        }
+        return;
+      }
 
       e.preventDefault();
-      const targetHref = target.getAttribute("href") as string;
       if (target) {
         const target = Array.from(contentElement.querySelectorAll("a")).filter(
           (anchor) => anchor.getAttribute("href")?.includes(targetHref)
