@@ -28,25 +28,25 @@ const Header: React.FC<HeaderProps> = ({ title, location }) => {
         <S.Menu>
           <S.MenuLink
             to="/posts"
-            isselected={(pathname === "/posts").toString()}
+            isselected={(pathname.slice(0, 6) === "/posts").toString()}
           >
             posts
           </S.MenuLink>
           <S.MenuLink
             to="/about"
-            isselected={(pathname === "/about").toString()}
+            isselected={(pathname.slice(0, 6) === "/about").toString()}
           >
             about
           </S.MenuLink>
           <S.MenuLink
             to="/guestbook"
-            isselected={(pathname === "/guestbook").toString()}
+            isselected={(pathname.slice(0, 10) === "/guestbook").toString()}
           >
             guestbook
           </S.MenuLink>
           <S.MenuLink
             to="/playground"
-            isselected={(pathname === "/playground").toString()}
+            isselected={(pathname.slice(0, 11) === "/playground").toString()}
           >
             playground
           </S.MenuLink>
