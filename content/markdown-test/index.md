@@ -133,7 +133,7 @@ $a^2+b^2+c^2$
 
 ### Code Block Color
 
-```javascript
+```javascript{3}
 function findMax(arr) {
   if (arr.length === 0) {
     return "Array is empty";
