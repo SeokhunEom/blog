@@ -9,8 +9,8 @@
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
 
 // code
-$inline-dimmed-color: #ece5f1;
-$inline-text-color: #4b2043;
+$inline-dimmed-color: rgba(135, 131, 120, 0.15);
+$inline-text-color: #eb5757;
 
 .gatsby-highlight-code-line {
   background-color: hsla(207, 95%, 15%, 1);
