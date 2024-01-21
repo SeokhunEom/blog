@@ -1,16 +1,16 @@
-import './style.scss';
+import "./style.scss";
 
-import { ThemeProvider } from '@emotion/react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { ThemeManagerContext } from 'gatsby-emotion-dark-mode';
-import { useContext } from 'react';
+import { ThemeProvider } from "@emotion/react";
+import { graphql, useStaticQuery } from "gatsby";
+import { ThemeManagerContext } from "gatsby-emotion-dark-mode";
+import { useContext, useEffect } from "react";
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import ThemeToggle from '../components/ThemeToggle';
-import { darkTheme, lightTheme } from '../styles/const';
-import GlobalStyle from '../styles/GlobalStyle';
-import * as S from './styled';
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import ThemeToggle from "../components/ThemeToggle";
+import { darkTheme, lightTheme } from "../styles/const";
+import GlobalStyle from "../styles/GlobalStyle";
+import * as S from "./styled";
 
 type LayoutProps = {
   location: Location;
@@ -19,6 +19,15 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ location, children }) => {
   const theme = useContext(ThemeManagerContext);
+
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (theme.isDark) {
+      html?.setAttribute("data-theme", "dark");
+    } else {
+      html?.setAttribute("data-theme", "light");
+    }
+  }, [theme]);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
