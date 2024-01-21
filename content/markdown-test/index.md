@@ -127,6 +127,32 @@ H~2~O
 
 X^2^
 
+### Katex
+
+$a^2+b^2+c^2$
+
+### Code Block Color
+
+```javascript
+function findMax(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+const numbers = [3, 5, 2, 8, 1];
+const maxNumber = findMax(numbers);
+console.log("Maximum number:", maxNumber); // Output: Maximum number: 8
+```
+
 ```toc
 
 ```

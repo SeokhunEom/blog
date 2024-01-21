@@ -10,6 +10,8 @@ import Layout from "@/src/layout";
 import PostClass from "@/src/models/post";
 import { Post, SiteMetadata } from "@/src/type";
 
+import "katex/dist/katex.min.css";
+
 import * as S from "./styled";
 
 type PostTemplateProps = {
