@@ -43,12 +43,8 @@ export default {
    */
   featured: [
     {
-      title: "category1",
-      category: "featured-test",
-    },
-    {
-      title: "category2",
-      category: "featured-category2",
+      title: "Project",
+      category: "featured-Project",
     },
   ],
 

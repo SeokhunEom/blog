@@ -24,15 +24,24 @@ const PostsTemplate: React.FC<PostsTemplateProps> = ({
 }) => {
   const { edges, currentCategory } = pageContext;
   const { categories } = pageContext;
+  const filteredCategories = useMemo(
+    () => categories.filter((title) => title !== "Test"),
+    [categories]
+  );
   const currentTabIndex = useMemo(
-    () => categories.findIndex((category) => category === currentCategory),
-    [categories, currentCategory]
+    () =>
+      filteredCategories.findIndex((category) => category === currentCategory),
+    [filteredCategories, currentCategory]
   );
   const posts = edges.map(({ node }) => new PostClass(node));
+  const filteredPosts = useMemo(
+    () => posts.filter((post) => post.title !== "Test"),
+    [posts]
+  );
 
   const onTabIndexChange = (value: number) => {
     if (value === 0) return navigate(`/posts`);
-    navigate(`/posts/${categories[value]}`);
+    navigate(`/posts/${filteredCategories[value]}`);
   };
 
   const ref = useRef<HTMLDivElement>(null);
@@ -52,15 +61,15 @@ const PostsTemplate: React.FC<PostsTemplateProps> = ({
     <Layout location={location}>
       <Seo title="seokhun.dev | Posts" />
       <S.CategoryWrapper>
-        <S.CategoryTitle>{categories[currentTabIndex]}</S.CategoryTitle>
-        <S.CategorySubtitle>{`${posts.length} post${
-          posts.length < 2 ? "" : "s"
+        <S.CategoryTitle>{filteredCategories[currentTabIndex]}</S.CategoryTitle>
+        <S.CategorySubtitle>{`${filteredPosts.length} post${
+          filteredPosts.length < 2 ? "" : "s"
         }`}</S.CategorySubtitle>
       </S.CategoryWrapper>
 
       <S.TabWrapper>
         <S.Tabs ref={ref}>
-          {categories.map((title, index) => (
+          {filteredCategories.map((title, index) => (
             <S.Tab
               key={index}
               isSelected={currentTabIndex === index ? "true" : "false"}
@@ -72,7 +81,7 @@ const PostsTemplate: React.FC<PostsTemplateProps> = ({
         </S.Tabs>
 
         <S.PostCardsWrapper>
-          {posts.map((post, index) => (
+          {filteredPosts.map((post, index) => (
             <PostCard key={index} post={post} />
           ))}
         </S.PostCardsWrapper>

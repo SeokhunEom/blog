@@ -1,8 +1,8 @@
 ---
 emoji: ⚙️
-title: "markdown test"
-date: "2023-01-18"
-categories: featured-test
+title: "Test"
+date: "2023-01-21"
+categories: featured-Test
 ---
 
 # Markdown Cheat Sheet
@@ -118,14 +118,6 @@ That is so funny! :joy:
 ### Highlight
 
 I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
 
 ### Katex
 
