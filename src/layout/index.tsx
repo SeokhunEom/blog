@@ -1,4 +1,4 @@
-import "./style.scss";
+import "../styles/style.scss";
 
 import { ThemeProvider } from "@emotion/react";
 import { graphql, useStaticQuery } from "gatsby";
