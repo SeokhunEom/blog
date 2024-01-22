@@ -36,5 +36,5 @@
 <br/>
 
 ### 블로그 템플릿
-이 블로그 템플릿을 사용하고 싶으시다면 이 커밋을 기준으로 가져가시면 됩니다.
-[블로그 템플릿 커밋](https://github.com/tommya98/blog/tree/b6dcfd12f4ba1c8115e4342e4a5fc31f3064bcdc)
+이 블로그 템플릿을 사용하고 싶으시다면 이 커밋을 기준으로 사용하시면 됩니다.
+[블로그 템플릿 커밋](https://github.com/tommya98/blog/tree/c3f641859654fffb766b4815acd32eb4df3513c4)
