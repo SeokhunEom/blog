@@ -33,7 +33,7 @@ export default {
     },
     social: {
       github: `https://github.com/tommya98`,
-      linkedIn: `https://www.linkedin.com/in/석훈-엄-956391259/`,
+      portfolio: `https://ballistic-pangolin-89b.notion.site/f3cc3388e5e74594bd334bf40667e328`,
       email: `mailto:tommya98@naver.com`,
     },
   },

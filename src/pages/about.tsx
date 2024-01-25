@@ -57,7 +57,7 @@ export const pageQuery = graphql`
           }
           social {
             github
-            linkedIn
+            portfolio
             email
           }
         }

@@ -53,7 +53,7 @@ export type Bio = {
 
 export type Social = {
   github: string;
-  linkedIn: string;
+  portfolio: string;
   email: string;
 };
 
