@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import React from "react";
 
 import useTocScroll from "@/src/hooks/useTocScroll";
+import useImageCaption from "@/src/hooks/useImageCaption";
 import PostHeader from "@/src/components/PostHeader";
 import PostNavigator from "@/src/components/PostNavigator";
 import Seo from "@/src/components/Seo";
@@ -31,6 +32,7 @@ const PostTemplate: React.FC<PostTemplateProps> = ({ location, data }) => {
   const nextPost = data.next && new PostClass(data.next);
   const utterancesRepo = data.site.siteMetadata.comments.utterances.repo;
   const contentRef = useTocScroll();
+  useImageCaption();
 
   return (
     <Layout location={location}>

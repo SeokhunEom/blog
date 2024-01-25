@@ -55,6 +55,13 @@ const style = (theme: Theme) => css`
   .scroll-locked {
     overflow: hidden;
   }
+
+  .caption {
+    font-size: 1rem;
+    color: ${theme.color.gray60};
+    text-align: center;
+    transform: translateY(-10px);
+  }
 `;
 
 const GlobalStyle: React.FC = () => <Global styles={style} />;
