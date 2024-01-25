@@ -10,6 +10,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  console.log(project);
   return (
     <S.Wrapper>
       <S.ImageSection>

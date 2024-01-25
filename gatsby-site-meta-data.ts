@@ -67,13 +67,42 @@ export default {
    */
   projects: [
     {
-      title: "Portfolio",
-      description: "포트폴리오",
-      techStack: ["React", "Typescript"],
-      thumbnailUrl: "", // Path to your in the 'assets' folder
+      title: "SPANS",
+      description:
+        "드론의 버드 아이 뷰 기반 장애물 탐지 및 최적 경로 탐색 시스템 프로토타입",
+      techStack: ["React", "JavaScript"],
+      thumbnailUrl: "SPANS_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
         post: "",
-        github: "",
+        github: "https://github.com/tommya98/SPANS",
+        demo: "",
+        googlePlay: "",
+        appStore: "",
+      },
+    },
+    {
+      title: "NewSnack",
+      description:
+        "유저의 관심사 기반으로 필터링 및 추천된 뉴스를 요약하여 제공 및 카카오톡 전송 서비스",
+      techStack: ["React", "TypeScript"],
+      thumbnailUrl: "NewSnack_thumbnail.jpg", // Path to your in the 'assets' folder
+      links: {
+        post: "",
+        github: "https://github.com/tommya98/NewSnack",
+        demo: "",
+        googlePlay: "",
+        appStore: "",
+      },
+    },
+    {
+      title: "CaArt",
+      description:
+        "사용자의 라이프스타일 및 카마스터 기반 차량 추천 및 커스텀 서비스",
+      techStack: ["React", "TypeScript"],
+      thumbnailUrl: "CaArt_thumbnail.jpg", // Path to your in the 'assets' folder
+      links: {
+        post: "",
+        github: "https://github.com/tommya98/H6-CaArt",
         demo: "",
         googlePlay: "",
         appStore: "",

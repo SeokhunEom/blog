@@ -65,9 +65,9 @@ const Title = styled.div`
 const ProjectCardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 29px;
+  column-gap: 30px;
   margin-top: 60px;
-  row-gap: 64px;
+  row-gap: 30px;
   @media ${MOBILE_MEDIA_QUERY} {
     display: flex;
     flex-direction: column;
