@@ -37,4 +37,4 @@
 
 ### 블로그 템플릿
 이 블로그 템플릿을 사용하고 싶으시다면 이 커밋을 기준으로 사용하시면 됩니다.
-[블로그 템플릿 커밋 v1.1.0](https://github.com/tommya98/blog/tree/cde94ec754063459fc3aaf32badc64def01b6250)
+[블로그 템플릿 커밋 v1.2.0](https://github.com/tommya98/blog/tree/6b398a80fd1025504c90785fbd20c9fe63bae229)
