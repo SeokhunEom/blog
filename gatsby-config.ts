@@ -142,7 +142,7 @@ const config: GatsbyConfig = {
               exclude: "Table of Contents",
               tight: false,
               ordered: false,
-              fromHeading: 1,
+              fromHeading: 2,
               toHeading: 6,
               className: "table-of-contents",
             },

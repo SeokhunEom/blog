@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { Link } from 'gatsby';
+import styled from "@emotion/styled";
+import { Link } from "gatsby";
 
-import { hoverUnderline, MOBILE_MEDIA_QUERY } from '@/src/styles/const';
+import { hoverUnderline, MOBILE_MEDIA_QUERY } from "@/src/styles/const";
 
 export const Header = styled.header`
   display: flex;
@@ -41,11 +41,11 @@ export const Category = styled(Link)`
 `;
 
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: 3em;
   margin-bottom: 6px;
   line-height: 1.3;
 
   @media ${MOBILE_MEDIA_QUERY} {
-    font-size: 25px;
+    font-size: 2em;
   }
 `;
