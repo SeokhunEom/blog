@@ -108,5 +108,18 @@ export default {
         appStore: "",
       },
     },
+    {
+      title: "UI-MUSEUM",
+      description: "직접 만든 컴포넌트를 전시하는 전시대",
+      techStack: ["React", "TypeScript"],
+      thumbnailUrl: "UI-MUSEUM_thumbnail.jpg", // Path to your in the 'assets' folder
+      links: {
+        post: "",
+        github: "https://github.com/tommya98/UI-MUSEUM",
+        demo: "https://tommya98.github.io/UI-MUSEUM/",
+        googlePlay: "",
+        appStore: "",
+      },
+    },
   ],
 };
