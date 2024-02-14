@@ -75,8 +75,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
+    "build": "yarn clean && gatsby build",
+    "dev": "yarn clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
