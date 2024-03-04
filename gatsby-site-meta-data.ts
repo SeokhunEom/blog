@@ -114,7 +114,7 @@ export default {
       techStack: ["React", "TypeScript"],
       thumbnailUrl: "UI-MUSEUM_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
-        post: "",
+        post: "https://seokhun.dev/post2/",
         github: "https://github.com/tommya98/UI-MUSEUM",
         demo: "https://tommya98.github.io/UI-MUSEUM/",
         googlePlay: "",
