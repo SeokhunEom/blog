@@ -121,5 +121,18 @@ export default {
         appStore: "",
       },
     },
+    {
+      title: "Next.js Movie",
+      description: "Next.js로 만든 연습용 영화 웹사이트",
+      techStack: ["Next.js", "TypeScript"],
+      thumbnailUrl: "NextjsMovie_thumbnail.jpg", // Path to your in the 'assets' folder
+      links: {
+        post: "",
+        github: "https://github.com/tommya98/Next.js-Movie",
+        demo: "https://next-js-movie-lbl6osw3u-seokhuns-projects-939c8cd9.vercel.app/",
+        googlePlay: "",
+        appStore: "",
+      },
+    },
   ],
 };
