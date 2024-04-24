@@ -14,7 +14,7 @@ export default {
    */
   comments: {
     utterances: {
-      repo: `tommya98/blog`,
+      repo: `SeokhunEom/blog`,
     },
   },
 
@@ -32,7 +32,7 @@ export default {
         "서강대학교, 전자공학, 경제학, 컴퓨터공학 학사 (2018.03-재학중)",
     },
     social: {
-      github: `https://github.com/tommya98`,
+      github: `https://github.com/SeokhunEom`,
       portfolio: `https://ballistic-pangolin-89b.notion.site/f3cc3388e5e74594bd334bf40667e328`,
       email: `mailto:tommya98@naver.com`,
     },
@@ -74,7 +74,7 @@ export default {
       thumbnailUrl: "SPANS_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
         post: "",
-        github: "https://github.com/tommya98/SPANS",
+        github: "https://github.com/SeokhunEom/SPANS",
         demo: "",
         googlePlay: "",
         appStore: "",
@@ -88,7 +88,7 @@ export default {
       thumbnailUrl: "NewSnack_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
         post: "",
-        github: "https://github.com/tommya98/NewSnack",
+        github: "https://github.com/SeokhunEom/NewSnack",
         demo: "",
         googlePlay: "",
         appStore: "",
@@ -102,7 +102,7 @@ export default {
       thumbnailUrl: "CaArt_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
         post: "",
-        github: "https://github.com/tommya98/H6-CaArt",
+        github: "https://github.com/SeokhunEom/H6-CaArt",
         demo: "",
         googlePlay: "",
         appStore: "",
@@ -115,8 +115,8 @@ export default {
       thumbnailUrl: "UI-MUSEUM_thumbnail.jpg", // Path to your in the 'assets' folder
       links: {
         post: "https://seokhun.dev/post2/",
-        github: "https://github.com/tommya98/UI-MUSEUM",
-        demo: "https://tommya98.github.io/UI-MUSEUM/",
+        github: "https://github.com/SeokhunEom/UI-MUSEUM",
+        demo: "https://SeokhunEom.github.io/UI-MUSEUM/",
         googlePlay: "",
         appStore: "",
       },
@@ -128,7 +128,7 @@ export default {
       thumbnailUrl: "NextjsMovie_thumbnail.png", // Path to your in the 'assets' folder
       links: {
         post: "",
-        github: "https://github.com/tommya98/Next.js-Movie",
+        github: "https://github.com/SeokhunEom/Next.js-Movie",
         demo: "https://next-js-movie-opal.vercel.app/",
         googlePlay: "",
         appStore: "",

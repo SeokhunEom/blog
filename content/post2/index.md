@@ -253,8 +253,8 @@ const Modal = () => {
 
 프로젝트를 처음 구상하고 시작한 순간부터, 마침내 원하는 기능들을 모두 포함시켜 완성한 지금까지, 많은 도전과 성장의 과정을 겪었습니다. 프로젝트 결과물은 아래 링크에서 확인할 수 있습니다.
 
-- [깃허브 링크](https://github.com/tommya98/UI-MUSEUM)
-- [배포 링크](https://tommya98.github.io/UI-MUSEUM/)
+- [깃허브 링크](https://github.com/SeokhunEom/UI-MUSEUM)
+- [배포 링크](https://SeokhunEom.github.io/UI-MUSEUM/)
 
 <br>
 

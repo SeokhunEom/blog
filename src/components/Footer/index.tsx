@@ -9,7 +9,8 @@ const Footer: React.FC = () => {
   return (
     <S.Wrapper>
       <S.Footer>
-        © Powered by <S.Link href="https://github.com/tommya98">seokhun</S.Link>
+        © Powered by{" "}
+        <S.Link href="https://github.com/SeokhunEom">seokhun</S.Link>
       </S.Footer>
     </S.Wrapper>
   );
